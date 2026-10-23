@@ -1,0 +1,81 @@
+name: Publish verified reproducibility files
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.import/**'
+      - '.github/workflows/import.yml'
+permissions:
+  contents: write
+jobs:
+  publish:
+    if: ${{ github.repository == 'classworkneet-rgb/healthcare-chatbots-reproducibility' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      PYTHONDONTWRITEBYTECODE: '1'
+      PYTHONHASHSEED: '0'
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: main
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0
+        with:
+          python-version: '3.12'
+      - name: Restore the author-approved public data and code
+        shell: bash
+        run: |
+          python -B -S - <<'PY'
+          import base64, hashlib, json, lzma, shutil
+          from pathlib import Path, PurePosixPath
+          root = Path.cwd().resolve()
+          parts = [root / '.import' / f'part-{i:02d}.b64' for i in range(1, 7)]
+          raw = base64.b64decode(''.join(p.read_text(encoding='utf-8') for p in parts), validate=True)
+          assert hashlib.sha256(raw).hexdigest() == 'b999e5940d202f2394ea1e06fddabfc7c42cffd5358307ccf47d89f5e00d2372', 'Transport checksum mismatch'
+          files = json.loads(lzma.decompress(raw))
+          assert len(files) == 56
+          allowed_dirs = {'01_data', '02_methods', '03_code', '04_outputs', '05_provenance', 'docs'}
+          allowed_root = {'.gitattributes', '.gitignore', 'CITATION.md', 'CONTRIBUTING.md', 'LICENSE_STATUS.md', 'README.md', 'VERSION', 'check_reproduction.py'}
+          restored = {}
+          combined = hashlib.sha256()
+          for name, text in sorted(files.items()):
+              rel = PurePosixPath(name)
+              assert not rel.is_absolute() and '..' not in rel.parts and '\\' not in name
+              assert (len(rel.parts) == 1 and name in allowed_root) or (len(rel.parts) > 1 and rel.parts[0] in allowed_dirs)
+              data = text.encode('utf-8')
+              if name.endswith('.csv'):
+                  data = data.replace(b'\n', b'\r\n')
+              combined.update(name.encode('utf-8') + b'\0' + data)
+              restored[name] = data
+          assert combined.hexdigest() == '9f84d73f02e4243821b353030d5d5f6f2efe4274aaa7b71b788a0126b8aac991', 'Restored source bytes differ'
+          for name, data in restored.items():
+              target = root / name
+              target.parent.mkdir(parents=True, exist_ok=True)
+              target.write_bytes(data)
+          (root / 'build').mkdir(exist_ok=True)
+          (root / 'build' / 'publication_paths.json').write_text(json.dumps(sorted(files)), encoding='utf-8')
+          shutil.rmtree(root / '.import')
+          (root / '.github' / 'workflows' / 'import.yml').unlink()
+          print('Restored and byte-verified 56 public text files.')
+          PY
+      - name: Build the workbook and verify the complete analytical snapshot
+        shell: bash
+        run: |
+          python -B -S 03_code/build_workbook.py --output 01_data/Healthcare_Chatbots_Evidence.xlsx
+          python -B -S 03_code/update_manifest.py --confirm-reviewed-changes
+          python -B -S check_reproduction.py
+      - name: Commit verified public files without modifying workflow permissions
+        shell: bash
+        run: |
+          python -B -S - <<'PY'
+          import json, subprocess
+          from pathlib import Path
+          files = json.loads(Path('build/publication_paths.json').read_text(encoding='utf-8'))
+          files += ['01_data/Healthcare_Chatbots_Evidence.xlsx', 'MANIFEST.json', 'SHA256SUMS.txt']
+          subprocess.run(['git', 'config', 'user.name', 'github-actions[bot]'], check=True)
+          subprocess.run(['git', 'config', 'user.email', '41898282+github-actions[bot]@users.noreply.github.com'], check=True)
+          subprocess.run(['git', 'add', '--', *files], check=True)
+          subprocess.run(['git', 'commit', '-m', 'Publish verified healthcare chatbot data, analysis, workbook, tests and documentation'], check=True)
+          subprocess.run(['git', 'push', 'origin', 'HEAD:main'], check=True)
+          print('Public analytical files committed successfully.')
+          PY
