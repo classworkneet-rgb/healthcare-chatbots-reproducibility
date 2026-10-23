@@ -7,6 +7,11 @@
       "sha256": "7a212c4e97a33a4c1c587b180fedc646f1ff927aca07270e00da2e5ace0dcd80"
     },
     {
+      "path": ".github/workflows/rebuild-derived-files.yml",
+      "bytes": 1856,
+      "sha256": "aba992af16ff7eb4a99725675bb73b7a6c37b317b51a4a4e4ffc2810cbdf928f"
+    },
+    {
       "path": ".github/workflows/reproducibility.yml",
       "bytes": 908,
       "sha256": "a8a6fdc70b991f1e828160b5f1c8018abccdf5f4c18ffebfee50f19d48164df9"
@@ -18,8 +23,8 @@
     },
     {
       "path": "01_data/Healthcare_Chatbots_Evidence.xlsx",
-      "bytes": 72175,
-      "sha256": "1fc805d0916c126e4ca434a1d3647b0e7d9dfd4813719bfb1de85cd62e26fb2d"
+      "bytes": 72169,
+      "sha256": "dca0dc846ab3ddd654e138ea25a636b1a9db54ee36bcd72cc639b2970b0a7403"
     },
     {
       "path": "01_data/appraisal_rationales24.csv",
@@ -28,8 +33,8 @@
     },
     {
       "path": "01_data/claim_dispositions18.csv",
-      "bytes": 8261,
-      "sha256": "e36ccb5992be580cbc1c0c70570bf3f33901cd88d78145ed224575494410f679"
+      "bytes": 8045,
+      "sha256": "de51a35ce6803d267d144cd7dae9855e6ea5507bcece00cfaf1478f374d4d4ba"
     },
     {
       "path": "01_data/claim_evidence_ledger9.csv",
