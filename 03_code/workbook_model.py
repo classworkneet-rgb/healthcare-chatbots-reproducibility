@@ -65,7 +65,7 @@ def build_model():
   c[addr]=val;st[addr]=style
   if formula:f[addr]=formula
  put('A1','Healthcare chatbot evidence — analytical summary',1)
- put('A2',(ROOT/'02_methods/TITLE.txt').read_text().strip(),2)
+ put('A2',(ROOT/'02_methods/TITLE.txt').read_text(encoding='utf-8').strip(),2)
  for addr,text in [('A5','Historical analytical set'),('B5','Count'),('C5','Share'),('E5','Claim-level disposition'),('F5','Count'),('G5','Share'),('A16','Targeted source checks'),('B16','Count'),('C16','Access / scope'),('E16','Reading guide'),('A23','Interpretive boundary')]:put(addr,text,3)
  n=len(core);end=4+n
  fields=[('Healthcare-specific reports',None),('User measures','user_outcome'),('Clinical measures','clinical_outcome'),('Referral-safety proxy','safety_focused_investigation'),('Health-system operations','health_system_operations'),('Patient productivity','patient_productivity'),('Intervention-comparison family','comparative'),('Mental health and well-being','domain')]

@@ -46,7 +46,7 @@ class AnalysisTests(unittest.TestCase):
  def test_framework_comparators_present(self):
   self.assertEqual({x['key'] for x in r.read('framework_comparison.csv')},{'proctor','nasss','nice','present'})
  def test_no_unfinished_stage_instruction(self):
-  text=(r.ROOT/'01_data/extraction_revised24.csv').read_text()
+  text=(r.ROOT/'01_data/extraction_revised24.csv').read_text(encoding='utf-8')
   self.assertNotIn('verify per time point in Stage 4',text)
  def test_targeted_core_coverage(self):
   core={x['study_id'] for x in self.rows if x['core_flag']=='1'}

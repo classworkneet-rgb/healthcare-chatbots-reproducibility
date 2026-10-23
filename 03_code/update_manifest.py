@@ -18,7 +18,7 @@ def main():
     if not args.confirm_reviewed_changes:
         parser.error('Review all changed inputs/outputs first, then use --confirm-reviewed-changes.')
     records=[{'path':rel,'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()} for p,rel in included()]
-    (ROOT/'SHA256SUMS.txt').write_text(''.join(r['sha256']+'  '+r['path']+'\n' for r in records),encoding='utf-8')
-    (ROOT/'MANIFEST.json').write_text(json.dumps({'version':'1.0.0','files':records},indent=2)+'\n',encoding='utf-8')
+    (ROOT/'SHA256SUMS.txt').write_text(''.join(r['sha256']+'  '+r['path']+'\n' for r in records),encoding='utf-8',newline='\n')
+    (ROOT/'MANIFEST.json').write_text(json.dumps({'version':'1.0.0','files':records},indent=2)+'\n',encoding='utf-8',newline='\n')
     print(f'Manifest regenerated after operator confirmation: {len(records)} files')
 if __name__=='__main__':main()

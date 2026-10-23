@@ -54,7 +54,7 @@ class ReleaseTests(unittest.TestCase):
  def test_public_code_no_private_dependency(self):
   import ast
   for p in (ROOT/'03_code').glob('*.py'):
-   for node in ast.walk(ast.parse(p.read_text())):
+   for node in ast.walk(ast.parse(p.read_text(encoding='utf-8'))):
     if isinstance(node,ast.Import):mods=[a.name.split('.')[0] for a in node.names]
     elif isinstance(node,ast.ImportFrom):mods=[(node.module or '').split('.')[0]]
     else:continue
@@ -90,8 +90,8 @@ class ReleaseTests(unittest.TestCase):
      if v in ('',None):continue
      self.assertEqual(actual[m['name']]['cells'].get(a),v,m['name']+'!'+a)
  def test_title_unchanged(self):
-  self.assertEqual((ROOT/'02_methods/TITLE.txt').read_text().strip(),'From User Experience to Organizational Value: A Critical Integrative Review of Intelligent Chatbots in Healthcare Services')
+  self.assertEqual((ROOT/'02_methods/TITLE.txt').read_text(encoding='utf-8').strip(),'From User Experience to Organizational Value: A Critical Integrative Review of Intelligent Chatbots in Healthcare Services')
  def test_numerical_counts_unchanged(self):
-  r=json.loads((ROOT/'04_outputs/results.json').read_text())
+  r=json.loads((ROOT/'04_outputs/results.json').read_text(encoding='utf-8'))
   self.assertEqual((r['core']['n'],r['core']['user_outcome'],r['core']['clinical_outcome'],r['worked_cases'],r['claim_assessments']),(22,22,11,9,18))
 if __name__=='__main__':unittest.main()

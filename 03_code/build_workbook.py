@@ -92,7 +92,7 @@ def build(path):
  rootrel=elt(f'{{{P}}}Relationships')
  for i,t,target in [(1,R+'/officeDocument','xl/workbook.xml'),(2,P+'/metadata/core-properties','docProps/core.xml'),(3,R+'/extended-properties','docProps/app.xml')]:sub(rootrel,f'{{{P}}}Relationship',{'Id':f'rId{i}','Type':t,'Target':target})
  from xml.sax.saxutils import escape
- title=escape((ROOT/'02_methods/TITLE.txt').read_text().strip())
+ title=escape((ROOT/'02_methods/TITLE.txt').read_text(encoding='utf-8').strip())
  core=f'''<?xml version="1.0" encoding="UTF-8"?><cp:coreProperties xmlns:cp="http://schemas.openxmlformats.org/package/2006/metadata/core-properties" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><dc:title>{title}</dc:title><dc:subject>Study-level evidence and analytical calculations</dc:subject><dc:creator></dc:creator><cp:lastModifiedBy></cp:lastModifiedBy><dcterms:created xsi:type="dcterms:W3CDTF">2026-10-23T00:00:00Z</dcterms:created><dcterms:modified xsi:type="dcterms:W3CDTF">2026-10-23T00:00:00Z</dcterms:modified></cp:coreProperties>'''
  app='''<?xml version="1.0" encoding="UTF-8"?><Properties xmlns="http://schemas.openxmlformats.org/officeDocument/2006/extended-properties"><Application>Evidence workbook</Application></Properties>'''
  parts={'[Content_Types].xml':xml(content),'_rels/.rels':xml(rootrel),'xl/workbook.xml':xml(wb),'xl/_rels/workbook.xml.rels':xml(rel),'xl/styles.xml':styles(),'docProps/core.xml':core.encode(),'docProps/app.xml':app.encode()}
