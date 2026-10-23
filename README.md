@@ -11,6 +11,10 @@ Public repository: https://github.com/classworkneet-rgb/healthcare-chatbots-repr
 
 [View automated verification runs](https://github.com/classworkneet-rgb/healthcare-chatbots-reproducibility/actions/workflows/reproducibility.yml).
 
+## Data availability statement
+
+No new primary data were generated for this review. The study inventory, extraction and coding records, analytical scripts, tests, and supporting outputs are publicly available at this repository URL: https://github.com/classworkneet-rgb/healthcare-chatbots-reproducibility.
+
 ## Reproduce in one command
 
 Use **Python 3.10 or newer** from the repository root:
