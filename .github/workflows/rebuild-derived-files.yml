@@ -1,0 +1,47 @@
+name: Refresh derived workbook and integrity manifest
+on:
+  push:
+    branches: [main]
+    paths:
+      - '01_data/claim_dispositions18.csv'
+      - 'README.md'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  refresh:
+    if: ${{ github.repository == 'classworkneet-rgb/healthcare-chatbots-reproducibility' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      PYTHONDONTWRITEBYTECODE: '1'
+      PYTHONHASHSEED: '0'
+    steps:
+      - name: Check out repository with commit permission
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: true
+      - name: Set up Python
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.12'
+      - name: Regenerate calculations and workbook
+        run: |
+          python -S 03_code/reproduce.py
+          python -S 03_code/build_workbook.py --output 01_data/Healthcare_Chatbots_Evidence.xlsx
+          python -S 03_code/update_manifest.py --confirm-reviewed-changes
+      - name: Run complete offline verification
+        run: python -S check_reproduction.py
+      - name: Refresh integrity records after verification
+        run: python -S 03_code/update_manifest.py --confirm-reviewed-changes
+      - name: Commit regenerated workbook and outputs
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- 01_data/Healthcare_Chatbots_Evidence.xlsx MANIFEST.json SHA256SUMS.txt 04_outputs/
+          if git diff --cached --quiet; then
+            echo 'No derived files changed.'
+          else
+            git commit -m 'Refresh derived workbook and integrity manifest'
+            git push origin HEAD:main
+          fi
