@@ -12,5 +12,6 @@
       "commit": "6d4fd22b20465ccc0f7354476588e8df7c9ca0e0"
     }
   ],
-  "hosted_ci_run_performed": false
+  "hosted_results_url": "https://github.com/classworkneet-rgb/healthcare-chatbots-reproducibility/actions/workflows/reproducibility.yml",
+  "verification_note": "Action pins identify dependencies. Actual hosted results are recorded per commit in GitHub Actions."
 }

@@ -7,6 +7,10 @@ Prepared snapshot version **1.0.0**. This is a **data-and-code-only** repository
 no unpublished manuscript draft, editorial correspondence, author declarations,
 patient records, credentials, or copyrighted primary-article PDFs are included.
 
+Public repository: https://github.com/classworkneet-rgb/healthcare-chatbots-reproducibility
+
+[View automated verification runs](https://github.com/classworkneet-rgb/healthcare-chatbots-reproducibility/actions/workflows/reproducibility.yml).
+
 ## Reproduce in one command
 
 Use **Python 3.10 or newer** from the repository root:
