@@ -1,0 +1,4 @@
+ANALYTICAL REPRODUCTION: PASS
+22 historical analytical reports; 4 contextual reports; 4 contemporary illustrations outside the denominator.
+Six deterministic scenarios; 22 leave-one-out runs; 10 outcome co-occurrence pairs; 9 source-linked cases; 18 claim dispositions. Current source checks record 29 sources at different access levels.
+This validates arithmetic, identity/linkage constraints and internal consistency—not every inherited source interpretation, complete literature selection, independent review or framework efficacy.

@@ -1,0 +1,5 @@
+﻿Approach,Established contribution,Use in the proposed worksheet,Boundary
+Proctor [4],Implementation outcomes distinct from service and clinical outcomes; measurement and unit of analysis.,Use its distinctions to test whether the endpoint and analytical unit match the particular chatbot claim.,Not a new outcome taxonomy.
+NASSS [5],"Complexity across condition, technology, value, adopters, organization, context and adaptation.",Record the tested service configuration and contextual limits beside each claim.,Not a substitute for longitudinal implementation analysis.
+NICE ESF [6],"Purpose/risk-proportionate evidence; resource, budget-impact and economic requirements.",Trace the proposed benefit to an actual measured endpoint and identify missing evidence for the decision.,Not an evidence standard or regulatory certification.
+Present worksheet,"Five checks, four claim dispositions and a required-next-observation field.","Connect a source, specific claim and service decision in an inspectable ledger.","Illustrated, not independently validated or shown superior."

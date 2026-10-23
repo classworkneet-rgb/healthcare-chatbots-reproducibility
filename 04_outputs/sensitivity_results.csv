@@ -1,0 +1,7 @@
+﻿scenario,n,user_n,clinical_n,safety_related_n,operations_n,interpretation,user_pct,clinical_pct,safety_related_pct,operations_pct
+Legacy24 (superseded; not a final result),24,22,11,4,2,Old misclassification retained for traceability only,91.7,45.8,16.7,8.3
+Corrected24 including generic benchmarks,24,22,11,3,1,Report counts only; not pooled effects or safety certification,91.7,45.8,12.5,4.2
+Healthcare-specific22,22,22,11,1,1,Report counts only; not pooled effects or safety certification,100.0,50.0,4.5,4.5
+Core excluding inherited Lower labels,17,17,6,1,1,Report counts only; not pooled effects or safety certification,100.0,35.3,5.9,5.9
+Core excluding referral-intention proxy,21,21,11,0,1,Report counts only; not pooled effects or safety certification,100.0,52.4,0.0,4.8
+Expanded26 including consumer context,26,24,11,3,1,Consumer perceived benefit is not coded as clinical efficacy,92.3,42.3,11.5,3.8

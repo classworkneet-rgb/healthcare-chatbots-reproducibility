@@ -1,0 +1,16 @@
+{
+  "checked_on": "2026-10-23",
+  "actions": [
+    {
+      "repository": "actions/checkout",
+      "release": "v7.0.1",
+      "commit": "3d3c42e5aac5ba805825da76410c181273ba90b1"
+    },
+    {
+      "repository": "actions/setup-python",
+      "release": "v7.1.0",
+      "commit": "6d4fd22b20465ccc0f7354476588e8df7c9ca0e0"
+    }
+  ],
+  "hosted_ci_run_performed": false
+}

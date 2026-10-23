@@ -1,0 +1,6 @@
+﻿Check,Question,Evidence to inspect,Illustrative boundary
+Construct,Does the measured endpoint match the claim?,Match the instrument and behaviour measured to the proposed benefit.,Satisfaction is not safety; intention is not completed referral.
+Unit of analysis,Whose outcome was measured?,"Separate user, patient, team, provider and health-system outcomes.",Patient productivity is not a provider’s staff workload.
+Attribution,What supports improvement or mechanism?,"Inspect comparator, allocation, attrition and intervention components.",Use alone does not prove efficiency; association does not randomize a mediator.
+Transferability,Does the tested service match deployment?,"Check version, task, population, language, supervision and setting.",Curated answers do not establish unconstrained generative performance.
+Governance,What service conditions make the claim defensible?,"Identify oversight, handoff capacity, monitoring and change control.",A referral message is not an operationally completed handoff.

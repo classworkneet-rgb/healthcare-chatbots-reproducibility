@@ -1,0 +1,7 @@
+﻿Decision,Evidence requirement,Proposed action,Example metric
+Task selection,"Specify intended users, configuration and the claim.",Define permitted/prohibited tasks and the fallback.,Task completion; out-of-scope responses
+Human escalation,"Observe behaviour, not referral text alone.",Test destination capacity and transfer completion.,Completed handoffs; time to human contact
+Clinical benefit,"Specify comparator, endpoint and analysis population.","Separate chatbot, human and other intervention components.",Outcome-specific effects; attrition; harms
+Organizational value,"Separate observed timings, extrapolation and full costs.",Measure work displaced/added and total implementation costs.,Staff time; queue time; repeat contacts; total cost
+Safety and equity,Evaluate consequences and relevant subgroups.,Test high-risk scenarios; report uncertainty.,Errors; adverse events; subgroup completion
+Lifecycle governance,Treat updates as possible changes to applicability.,"Assign ownership, version control and stopping/scaling criteria.",Incident resolution; update reviews; audit completion

@@ -1,0 +1,167 @@
+{
+  "wutz": {
+    "doi": "10.2196/46548",
+    "reference": "Wutz M, Hermes M, Winter V, Köberlein-Neu J. Factors influencing the acceptability, acceptance, and adoption of conversational agents in health care: integrative review. J Med Internet Res. 2023;25:e46548. doi:10.2196/46548.",
+    "source_url": "https://doi.org/10.2196/46548"
+  },
+  "laymouna": {
+    "doi": "10.2196/56930",
+    "reference": "Laymouna M, Ma Y, Lessard D, Schuster T, Engler K, Lebouché B. Roles, users, benefits, and limitations of chatbots in health care: rapid review. J Med Internet Res. 2024;26:e56930. doi:10.2196/56930.",
+    "source_url": "https://doi.org/10.2196/56930"
+  },
+  "jabir": {
+    "doi": "10.2196/44548",
+    "reference": "Jabir AI, Martinengo L, Lin X, Torous J, Subramaniam M, Tudor Car L. Evaluating conversational agents for mental health: scoping review of outcomes and outcome measurement instruments. J Med Internet Res. 2023;25:e44548. doi:10.2196/44548.",
+    "source_url": "https://doi.org/10.2196/44548"
+  },
+  "whittemore": {
+    "doi": "10.1111/j.1365-2648.2005.03621.x",
+    "reference": "Whittemore R, Knafl K. The integrative review: updated methodology. J Adv Nurs. 2005;52(5):546–553. doi:10.1111/j.1365-2648.2005.03621.x.",
+    "source_url": "https://doi.org/10.1111/j.1365-2648.2005.03621.x"
+  },
+  "sanra": {
+    "doi": "10.1186/s41073-019-0064-8",
+    "reference": "Baethge C, Goldbeck-Wood S, Mertens S. SANRA—a scale for the quality assessment of narrative review articles. Res Integr Peer Rev. 2019;4:5. doi:10.1186/s41073-019-0064-8.",
+    "source_url": "https://doi.org/10.1186/s41073-019-0064-8"
+  },
+  "kocaballi": {
+    "doi": "10.2196/15823",
+    "reference": "Kocaballi AB, Quiroz JC, Rezazadegan D, et al. Responses of conversational agents to health and lifestyle prompts: investigation of appropriateness and presentation structures. J Med Internet Res. 2020;22(2):e15823. doi:10.2196/15823.",
+    "source_url": "https://doi.org/10.2196/15823"
+  },
+  "ferrand": {
+    "doi": "10.2196/19018",
+    "reference": "Ferrand J, Hockensmith R, Houghton RF, Walsh-Buhi ER. Evaluating smart assistant responses for accuracy and misinformation regarding human papillomavirus vaccination: content analysis study. J Med Internet Res. 2020;22(8):e19018. doi:10.2196/19018.",
+    "source_url": "https://doi.org/10.2196/19018"
+  },
+  "maples": {
+    "doi": "10.1038/s44184-023-00047-6",
+    "reference": "Maples B, Cerit M, Vishwanath A, Pea R. Loneliness and suicide mitigation for students using GPT3-enabled chatbots. npj Ment Health Res. 2024;3:4. doi:10.1038/s44184-023-00047-6.",
+    "source_url": "https://doi.org/10.1038/s44184-023-00047-6"
+  },
+  "siddals": {
+    "doi": "10.1038/s44184-024-00097-4",
+    "reference": "Siddals S, Torous J, Coxon A. “It happened to be the perfect thing”: experiences of generative AI chatbots for mental health. npj Ment Health Res. 2024;3:48. doi:10.1038/s44184-024-00097-4.",
+    "source_url": "https://doi.org/10.1038/s44184-024-00097-4"
+  },
+  "bibault": {
+    "doi": "10.2196/15787",
+    "reference": "Bibault JE, Chaix B, Guillemassé A, et al. A chatbot versus physicians to provide information for patients with breast cancer: blind, randomized controlled noninferiority trial. J Med Internet Res. 2019;21(11):e15787. doi:10.2196/15787.",
+    "source_url": "https://doi.org/10.2196/15787"
+  },
+  "potts": {
+    "doi": "10.2196/43051",
+    "reference": "Potts C, Lindström F, Bond R, et al. A multilingual digital mental health and well-being chatbot (ChatPal): pre-post multicenter intervention study. J Med Internet Res. 2023;25:e43051. doi:10.2196/43051.",
+    "source_url": "https://doi.org/10.2196/43051"
+  },
+  "tielman": {
+    "doi": "10.1186/s12911-019-0796-x",
+    "reference": "Tielman ML, Neerincx MA, Pagliari C, Rizzo A, Brinkman WP. Considering patient safety in autonomous e-mental health systems: detecting risk situations and referring patients back to human care. BMC Med Inform Decis Mak. 2019;19:47. doi:10.1186/s12911-019-0796-x.",
+    "source_url": "https://doi.org/10.1186/s12911-019-0796-x"
+  },
+  "palanica": {
+    "doi": "10.2196/12887",
+    "reference": "Palanica A, Flaschner P, Thommandram A, Li M, Fossat Y. Physicians’ perceptions of chatbots in health care: cross-sectional web-based survey. J Med Internet Res. 2019;21(4):e12887. doi:10.2196/12887.",
+    "source_url": "https://doi.org/10.2196/12887"
+  },
+  "nadarzynski": {
+    "doi": "10.1177/2055207619871808",
+    "reference": "Nadarzynski T, Miles O, Cowie A, Ridge D. Acceptability of artificial intelligence-led chatbot services in healthcare: a mixed-methods study. Digit Health. 2019;5:2055207619871808. doi:10.1177/2055207619871808.",
+    "source_url": "https://doi.org/10.1177/2055207619871808"
+  },
+  "koman": {
+    "doi": "10.2196/15185",
+    "reference": "Koman J, Fauvelle K, Schuck S, Texier N, Mebarki A. Physicians’ perceptions of the use of a chatbot for information seeking: qualitative study. J Med Internet Res. 2020;22(11):e15185. doi:10.2196/15185.",
+    "source_url": "https://doi.org/10.2196/15185"
+  },
+  "sweeney": {
+    "doi": "10.1145/3453175",
+    "reference": "Sweeney C, Potts C, Ennis E, et al. Can chatbots help support a person's mental health? Perceptions and views from mental healthcare professionals and experts. ACM Trans Comput Healthc. 2021;2(3):1–15. doi:10.1145/3453175.",
+    "source_url": "https://doi.org/10.1145/3453175"
+  },
+  "griffin": {
+    "doi": "10.1093/jamiaopen/ooab021",
+    "reference": "Griffin AC, Xing Z, Mikles SP, et al. Information needs and perceptions of chatbots for hypertension medication self-management: a mixed methods study. JAMIA Open. 2021;4(2):ooab021. doi:10.1093/jamiaopen/ooab021.",
+    "source_url": "https://doi.org/10.1093/jamiaopen/ooab021"
+  },
+  "he": {
+    "doi": "10.2196/40719",
+    "reference": "He Y, Yang L, Zhu X, et al. Mental health chatbot for young adults with depressive symptoms during the COVID-19 pandemic: single-blind, three-arm randomized controlled trial. J Med Internet Res. 2022;24(11):e40719. doi:10.2196/40719.",
+    "source_url": "https://doi.org/10.2196/40719"
+  },
+  "fitz": {
+    "doi": "10.1002/eat.23662",
+    "reference": "Fitzsimmons-Craft EE, Chan WW, Smith AC, et al. Effectiveness of a chatbot for eating disorders prevention: a randomized clinical trial. Int J Eat Disord. 2022;55(3):343-353. doi:10.1002/eat.23662.",
+    "source_url": "https://doi.org/10.1002/eat.23662"
+  },
+  "kleinau": {
+    "doi": "10.1371/journal.pone.0303370",
+    "reference": "Kleinau E, Lamba T, Jaskiewicz W, et al. Effectiveness of a chatbot in improving the mental wellbeing of health workers in Malawi during the COVID-19 pandemic: a randomized controlled trial. PLoS One. 2024;19(5):e0303370. doi:10.1371/journal.pone.0303370.",
+    "source_url": "https://doi.org/10.1371/journal.pone.0303370"
+  },
+  "ulrich": {
+    "doi": "10.2196/50132",
+    "reference": "Ulrich S, Gantenbein AR, Zuber V, von Wyl A, Kowatsch T, Künzli H. Development and evaluation of a smartphone-based chatbot coach to facilitate a balanced lifestyle in individuals with headaches: randomized controlled trial. J Med Internet Res. 2024;26:e50132. doi:10.2196/50132.",
+    "source_url": "https://doi.org/10.2196/50132"
+  },
+  "judson": {
+    "doi": "10.1093/jamia/ocaa130",
+    "reference": "Judson TJ, Odisho AY, Young JJ, et al. Implementation of a digital chatbot to screen health system employees during the COVID-19 pandemic. J Am Med Inform Assoc. 2020;27(9):1450-1455. doi:10.1093/jamia/ocaa130.",
+    "source_url": "https://doi.org/10.1093/jamia/ocaa130"
+  },
+  "kamita": {
+    "doi": "10.1155/2019/9517321",
+    "reference": "Kamita T, Ito T, Matsumoto A, Munakata T, Inoue T. A chatbot system for mental healthcare based on SAT counseling method. Mobile Information Systems. 2019;2019:9517321. doi:10.1155/2019/9517321.",
+    "source_url": "https://doi.org/10.1155/2019/9517321"
+  },
+  "prochaska": {
+    "doi": "10.2196/24850",
+    "reference": "Prochaska JJ, Vogel EA, Chieng A, et al. A therapeutic relational agent for reducing problematic substance use (Woebot): development and usability study. J Med Internet Res. 2021;23(3):e24850. doi:10.2196/24850.",
+    "source_url": "https://doi.org/10.2196/24850"
+  },
+  "langhammer": {
+    "doi": "10.1155/2024/8950388",
+    "reference": "Langhammer T, Hilbert K, Wasenmueller R, et al. Evaluation of a CBT-based program for mental health in the general population during the COVID-19 pandemic: a stepped-care approach using a chatbot and digitized group intervention. Depression and Anxiety. 2024;2024:8950388. doi:10.1155/2024/8950388.",
+    "source_url": "https://doi.org/10.1155/2024/8950388"
+  },
+  "therabot": {
+    "doi": "10.1056/AIoa2400802",
+    "reference": "Heinz MV, Mackin DM, Trudeau BM, et al. Randomized trial of a generative AI chatbot for mental health treatment. NEJM AI. 2025;2(4):AIoa2400802. doi:10.1056/AIoa2400802.",
+    "source_url": "https://doi.org/10.1056/AIoa2400802"
+  },
+  "shoshani": {
+    "doi": "10.1001/jamanetworkopen.2026.6713",
+    "reference": "Shoshani A, Gurfinkel B, Kor A, et al. Efficacy of a conversational AI agent for psychiatric symptoms and digital therapeutic alliance: a randomized clinical trial. JAMA Netw Open. 2026;9(4):e266713. doi:10.1001/jamanetworkopen.2026.6713.",
+    "source_url": "https://doi.org/10.1001/jamanetworkopen.2026.6713"
+  },
+  "liao": {
+    "doi": "10.2196/97773",
+    "reference": "Liao Y, Madeo A, Allen CG, et al. The Impact of Chatbot Type and Normative Messaging on Chatbot Usage Intention Based on the Health Technology Acceptance Model: Randomized Controlled Trial. J Med Internet Res. 2026;28:e97773. doi:10.2196/97773.",
+    "source_url": "https://doi.org/10.2196/97773"
+  },
+  "chula": {
+    "doi": "10.2196/86149",
+    "reference": "Sompornpailin N, Susiriwatananont T, Sriuranpong V, et al. Feasibility and Preliminary Effectiveness of the ChulaCancer Mobile Chatbot for Supportive Care of Patients With Breast or Colorectal Cancer Receiving Chemotherapy: Pilot Randomized Controlled Trial. JMIR Form Res. 2026;10:e86149. doi:10.2196/86149.",
+    "source_url": "https://doi.org/10.2196/86149"
+  },
+  "sdl": {
+    "doi": "10.1509/jmkg.68.1.1.24036",
+    "reference": "Vargo SL, Lusch RF. Evolving to a new dominant logic for marketing. J Mark. 2004;68(1):1–17. doi:10.1509/jmkg.68.1.1.24036.",
+    "source_url": "https://doi.org/10.1509/jmkg.68.1.1.24036"
+  },
+  "proctor": {
+    "doi": "10.1007/s10488-010-0319-7",
+    "reference": "Proctor E, Silmere H, Raghavan R, et al. Outcomes for implementation research: conceptual distinctions, measurement challenges, and research agenda. Adm Policy Ment Health. 2011;38(2):65–76. doi:10.1007/s10488-010-0319-7.",
+    "source_url": "https://doi.org/10.1007/s10488-010-0319-7"
+  },
+  "nasss": {
+    "doi": "10.2196/jmir.8775",
+    "reference": "Greenhalgh T, Wherton J, Papoutsi C, et al. Beyond adoption: a new framework for theorizing and evaluating nonadoption, abandonment, and challenges to the scale-up, spread, and sustainability of health and care technologies. J Med Internet Res. 2017;19(11):e367. doi:10.2196/jmir.8775.",
+    "source_url": "https://www.jmir.org/2017/11/e367/"
+  },
+  "nice": {
+    "doi": "",
+    "reference": "National Institute for Health and Care Excellence. Evidence standards framework for digital health technologies. ECD7. Updated 9 August 2022. https://www.nice.org.uk/corporate/ecd7 (accessed 23 October 2026).",
+    "source_url": "https://www.nice.org.uk/corporate/ecd7"
+  }
+}

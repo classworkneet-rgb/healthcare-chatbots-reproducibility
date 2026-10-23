@@ -1,0 +1,29 @@
+﻿dimension,category,n,denominator,percent,report_ids
+domain,Chronic-condition self-management,2,22,9.1,S16; S24
+domain,General healthcare adoption/information,4,22,18.2,S01; S02; S08; S13
+domain,Mental health and well-being,13,22,59.1,S03; S04; S09; S10; S12; S14; S17; S18; S19; S20; S21; S22; S23
+domain,Oncology information services,1,22,4.5,S05
+domain,Public health,2,22,9.1,S11; S15
+design_family,Implementation/technical evaluation,1,22,4.5,S11
+design_family,Mixed methods,4,22,18.2,S02; S04; S15; S16
+design_family,Qualitative,1,22,4.5,S08
+design_family,Randomized/comparative intervention,7,22,31.8,S03; S05; S17; S18; S19; S22; S24
+design_family,Single-arm/pre-post intervention,5,22,22.7,S09; S12; S20; S21; S23
+design_family,Survey/observational,4,22,18.2,S01; S10; S13; S14
+geographic_context,Bangladesh,1,22,4.5,S15
+geographic_context,Brazil,1,22,4.5,S09
+geographic_context,China,2,22,9.1,S13; S18
+geographic_context,France,2,22,9.1,S05; S08
+geographic_context,Germany,1,22,4.5,S23
+geographic_context,"Ireland, Northern Ireland, Scotland, Finland and Sweden",1,22,4.5,S21
+geographic_context,Japan,1,22,4.5,S03
+geographic_context,Malawi,1,22,4.5,S22
+geographic_context,Netherlands/online international sample,1,22,4.5,S04
+geographic_context,"Northern Ireland, Ireland, Scotland, Sweden and Finland",1,22,4.5,S14
+geographic_context,South Korea,1,22,4.5,S17
+geographic_context,Switzerland,1,22,4.5,S24
+geographic_context,United Kingdom,1,22,4.5,S02
+geographic_context,United States,7,22,31.8,S01; S10; S11; S12; S16; S19; S20
+legacy_confidence,Higher,4,22,18.2,S05; S18; S19; S24
+legacy_confidence,Lower,5,22,22.7,S03; S09; S12; S20; S23
+legacy_confidence,Moderate,13,22,59.1,S01; S02; S04; S08; S10; S11; S13; S14; S15; S16; S17; S21; S22

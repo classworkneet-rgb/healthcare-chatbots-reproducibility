@@ -1,0 +1,3 @@
+# Preserve exact bytes used by the checksum manifest on Windows, Linux and macOS.
+* -text
+*.xlsx binary

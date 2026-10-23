@@ -1,0 +1,14 @@
+﻿record_id,endpoint,group,n,value,unit,timepoint,note
+S11,entrance_clearance,manual,28,48,seconds,implementation observation,Observed mean; nonrandomized
+S11,entrance_clearance,digital,20,8,seconds,implementation observation,Observed mean; nonrandomized
+S11,peak_shift_queue,before,,500,seconds,peak shift,Reported mean; sample not specified
+S11,peak_shift_queue,after,,100,seconds,peak shift,Reported mean; sample not specified
+S18,PHQ9_population,XiaoE,49,,participants,randomized,Observed endpoint counts and full randomized ITT with imputation are distinct
+S18,PHQ9_population,ebook,49,,participants,randomized,Observed endpoint counts and full randomized ITT with imputation are distinct
+S18,PHQ9_population,Xiaoai,50,,participants,randomized,Observed endpoint counts and full randomized ITT with imputation are distinct
+S18,PHQ9_population,XiaoE,45,,participants,day7_observed,Observed endpoint counts and full randomized ITT with imputation are distinct
+S18,PHQ9_population,ebook,39,,participants,day7_observed,Observed endpoint counts and full randomized ITT with imputation are distinct
+S18,PHQ9_population,Xiaoai,41,,participants,day7_observed,Observed endpoint counts and full randomized ITT with imputation are distinct
+S18,PHQ9_population,XiaoE,44,,participants,day30_observed,Observed endpoint counts and full randomized ITT with imputation are distinct
+S18,PHQ9_population,ebook,32,,participants,day30_observed,Observed endpoint counts and full randomized ITT with imputation are distinct
+S18,PHQ9_population,Xiaoai,30,,participants,day30_observed,Observed endpoint counts and full randomized ITT with imputation are distinct

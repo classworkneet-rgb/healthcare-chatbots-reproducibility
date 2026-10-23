@@ -1,0 +1,72 @@
+﻿file,field,definition
+coding_revised_core22.csv / coding_revised_all24.csv,study_id,"Stable report identifier; unit is a report, not a pooled participant cohort."
+coding_revised_core22.csv / coding_revised_all24.csv,year,Publication year recorded in the source inventory.
+coding_revised_core22.csv / coding_revised_all24.csv,title,Source-linked descriptive field; consult the report roster and source-verification record.
+coding_revised_core22.csv / coding_revised_all24.csv,doi,Source-linked descriptive field; consult the report roster and source-verification record.
+coding_revised_core22.csv / coding_revised_all24.csv,domain,Mutually exclusive broad healthcare-domain classification.
+coding_revised_core22.csv / coding_revised_all24.csv,design_family,Mutually exclusive descriptive design family; does not count every randomized subcomponent.
+coding_revised_core22.csv / coding_revised_all24.csv,geographic_context,Reported study setting; not necessarily participant residence or author affiliation.
+coding_revised_core22.csv / coding_revised_all24.csv,legacy_confidence,Inherited sensitivity label only; not a formal risk-of-bias or certainty score.
+coding_revised_core22.csv / coding_revised_all24.csv,role,Source-linked descriptive field; consult the report roster and source-verification record.
+coding_revised_core22.csv / coding_revised_all24.csv,core_flag,1 includes the report in the historical healthcare-specific denominator; 0 keeps it contextual.
+coding_revised_core22.csv / coding_revised_all24.csv,comparative,1 marks the intervention-comparison design family; 0 otherwise.
+coding_revised_core22.csv / coding_revised_all24.csv,user_outcome,"1 indicates a user measure such as perception, intention, usability, satisfaction or engagement."
+coding_revised_core22.csv / coding_revised_all24.csv,clinical_outcome,1 indicates a clinical/health-related measure; does not assert treatment benefit.
+coding_revised_core22.csv / coding_revised_all24.csv,safety_focused_investigation,1 indicates the narrowly coded safety-related investigation or contextual benchmark.
+coding_revised_core22.csv / coding_revised_all24.csv,response_accuracy_benchmark,"1 marks a generic-assistant response benchmark, outside the core denominator."
+coding_revised_core22.csv / coding_revised_all24.csv,referral_intention_proxy,1 identifies an intended-referral proxy; not completed referral or avoided harm.
+coding_revised_core22.csv / coding_revised_all24.csv,health_system_operations,"1 indicates a direct organizational process measure, not merely deployment setting."
+coding_revised_core22.csv / coding_revised_all24.csv,patient_productivity,"1 indicates patient work/household impairment, not provider staffing or productivity."
+coding_revised_core22.csv / coding_revised_all24.csv,source_url,Source-linked descriptive field; consult the report roster and source-verification record.
+coding_revised_core22.csv / coding_revised_all24.csv,verification_status,Source-linked descriptive field; consult the report roster and source-verification record.
+coding_revised_core22.csv / coding_revised_all24.csv,independent_human_review,Source-linked descriptive field; consult the report roster and source-verification record.
+coding_revised_core22.csv / coding_revised_all24.csv,legacy_service_flag,Superseded broad service flag retained for provenance only.
+coding_revised_core22.csv / coding_revised_all24.csv,legacy_safety_flag,Superseded safety coding retained only for correction sensitivity.
+coding_revised_core22.csv / coding_revised_all24.csv,legacy_org_flag,Superseded organizational coding retained only for correction sensitivity.
+claim_dispositions18.csv,assessment_id,As recorded in the published-source extraction; access limits remain explicit in the source-check log.
+claim_dispositions18.csv,case_id,As recorded in the published-source extraction; access limits remain explicit in the source-check log.
+claim_dispositions18.csv,report_id,As recorded in the published-source extraction; access limits remain explicit in the source-check log.
+claim_dispositions18.csv,claim,As recorded in the published-source extraction; access limits remain explicit in the source-check log.
+claim_dispositions18.csv,disposition,"Claim-level analyst judgment: supported within tested conditions, supported with qualifications, not established, or not assessed."
+claim_dispositions18.csv,rationale,As recorded in the published-source extraction; access limits remain explicit in the source-check log.
+claim_dispositions18.csv,source_url,Direct source acquisition location; not proof of complete source verification.
+claim_dispositions18.csv,source_locator,As recorded in the published-source extraction; access limits remain explicit in the source-check log.
+claim_dispositions18.csv,access_level,"Whether complete primary text, excerpt or abstract supported this check."
+claim_dispositions18.csv,assessor,As recorded in the published-source extraction; access limits remain explicit in the source-check log.
+verified_endpoints.csv,record_id,Stable historical/contemporary/framework source identifier.
+verified_endpoints.csv,endpoint,As recorded in the published-source extraction; access limits remain explicit in the source-check log.
+verified_endpoints.csv,group,As recorded in the published-source extraction; access limits remain explicit in the source-check log.
+verified_endpoints.csv,n,"Endpoint-specific count; interpret with timepoint and population, never sum across repeated measures."
+verified_endpoints.csv,value,As recorded in the published-source extraction; access limits remain explicit in the source-check log.
+verified_endpoints.csv,unit,As recorded in the published-source extraction; access limits remain explicit in the source-check log.
+verified_endpoints.csv,timepoint,As recorded in the published-source extraction; access limits remain explicit in the source-check log.
+verified_endpoints.csv,note,As recorded in the published-source extraction; access limits remain explicit in the source-check log.
+full_study_roster26.csv,Study ID,As recorded in the published-source extraction; access limits remain explicit in the source-check log.
+full_study_roster26.csv,Citation,As recorded in the published-source extraction; access limits remain explicit in the source-check log.
+full_study_roster26.csv,Year,As recorded in the published-source extraction; access limits remain explicit in the source-check log.
+full_study_roster26.csv,Title,As recorded in the published-source extraction; access limits remain explicit in the source-check log.
+full_study_roster26.csv,DOI,As recorded in the published-source extraction; access limits remain explicit in the source-check log.
+full_study_roster26.csv,System,As recorded in the published-source extraction; access limits remain explicit in the source-check log.
+full_study_roster26.csv,Domain,As recorded in the published-source extraction; access limits remain explicit in the source-check log.
+full_study_roster26.csv,Country/region,As recorded in the published-source extraction; access limits remain explicit in the source-check log.
+full_study_roster26.csv,Stakeholder,As recorded in the published-source extraction; access limits remain explicit in the source-check log.
+full_study_roster26.csv,Design,As recorded in the published-source extraction; access limits remain explicit in the source-check log.
+full_study_roster26.csv,Design family,As recorded in the published-source extraction; access limits remain explicit in the source-check log.
+full_study_roster26.csv,Sample summary,As recorded in the published-source extraction; access limits remain explicit in the source-check log.
+full_study_roster26.csv,Comparator,As recorded in the published-source extraction; access limits remain explicit in the source-check log.
+full_study_roster26.csv,Duration/follow-up,As recorded in the published-source extraction; access limits remain explicit in the source-check log.
+full_study_roster26.csv,Interpretive confidence,As recorded in the published-source extraction; access limits remain explicit in the source-check log.
+full_study_roster26.csv,Source URL,As recorded in the published-source extraction; access limits remain explicit in the source-check log.
+full_study_roster26.csv,Revised role,As recorded in the published-source extraction; access limits remain explicit in the source-check log.
+full_study_roster26.csv,Current verification,As recorded in the published-source extraction; access limits remain explicit in the source-check log.
+full_study_roster26.csv,Independent verification,As recorded in the published-source extraction; access limits remain explicit in the source-check log.
+full_study_roster26.csv,Full bibliographic citation,As recorded in the published-source extraction; access limits remain explicit in the source-check log.
+full_study_roster26.csv,Legacy reference number,As recorded in the published-source extraction; access limits remain explicit in the source-check log.
+full_study_roster26.csv,Legacy eligibility,As recorded in the published-source extraction; access limits remain explicit in the source-check log.
+source_verification_v2.csv,record_id,Stable historical/contemporary/framework source identifier.
+source_verification_v2.csv,date,As recorded in the published-source extraction; access limits remain explicit in the source-check log.
+source_verification_v2.csv,source_url,Direct source acquisition location; not proof of complete source verification.
+source_verification_v2.csv,access_level,"Whether complete primary text, excerpt or abstract supported this check."
+source_verification_v2.csv,source_locator,As recorded in the published-source extraction; access limits remain explicit in the source-check log.
+source_verification_v2.csv,verified_scope,As recorded in the published-source extraction; access limits remain explicit in the source-check log.
+source_verification_v2.csv,independent_human_review,As recorded in the published-source extraction; access limits remain explicit in the source-check log.

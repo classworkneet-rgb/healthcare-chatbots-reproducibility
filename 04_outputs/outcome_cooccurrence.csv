@@ -1,0 +1,11 @@
+﻿outcome_a,outcome_b,co_measured_n,denominator,percent,report_ids,interpretation
+user_outcome,clinical_outcome,11,22,50.0,S03; S09; S12; S17; S18; S19; S20; S21; S22; S23; S24,Co-measurement only; no tested mediation or causal linkage inferred
+user_outcome,safety_focused_investigation,1,22,4.5,S04,Co-measurement only; no tested mediation or causal linkage inferred
+user_outcome,health_system_operations,1,22,4.5,S11,Co-measurement only; no tested mediation or causal linkage inferred
+user_outcome,patient_productivity,1,22,4.5,S24,Co-measurement only; no tested mediation or causal linkage inferred
+clinical_outcome,safety_focused_investigation,0,22,0.0,,Co-measurement only; no tested mediation or causal linkage inferred
+clinical_outcome,health_system_operations,0,22,0.0,,Co-measurement only; no tested mediation or causal linkage inferred
+clinical_outcome,patient_productivity,1,22,4.5,S24,Co-measurement only; no tested mediation or causal linkage inferred
+safety_focused_investigation,health_system_operations,0,22,0.0,,Co-measurement only; no tested mediation or causal linkage inferred
+safety_focused_investigation,patient_productivity,0,22,0.0,,Co-measurement only; no tested mediation or causal linkage inferred
+health_system_operations,patient_productivity,0,22,0.0,,Co-measurement only; no tested mediation or causal linkage inferred
