@@ -39,16 +39,17 @@ jobs:
               'update_manifest.py': '6da12b7cfcf5f01d051833e615e2641492777c4192cb10c4402ac25112451312',
               'workbook_model.py': 'fd9589162028c49530167d5947f894d740491c7eef221db3033aa8e68ca807fa'
           }
-          tests = """    def test_results_json_uses_canonical_lf(self):
-                  data=(ROOT/'04_outputs/results.json').read_bytes()
-                  self.assertNotIn(b'\\r',data)
-                  self.assertIsInstance(json.loads(data.decode('utf-8')),dict)
-              def test_validation_report_uses_canonical_lf(self):
-                  data=(ROOT/'04_outputs/validation_report.txt').read_bytes()
-                  self.assertNotIn(b'\\r',data)
-                  self.assertIn('ANALYTICAL REPRODUCTION: PASS',data.decode('utf-8'))
-          """
-          tests = '\n'.join(line[6:] if i and line.startswith('      ') else line for i, line in enumerate(tests.split('\n')))
+          tests = '\n'.join([
+              '    def test_results_json_uses_canonical_lf(self):',
+              "        data=(ROOT/'04_outputs/results.json').read_bytes()",
+              "        self.assertNotIn(b'\\r',data)",
+              "        self.assertIsInstance(json.loads(data.decode('utf-8')),dict)",
+              '    def test_validation_report_uses_canonical_lf(self):',
+              "        data=(ROOT/'04_outputs/validation_report.txt').read_bytes()",
+              "        self.assertNotIn(b'\\r',data)",
+              "        self.assertIn('ANALYTICAL REPRODUCTION: PASS',data.decode('utf-8'))",
+              ''
+          ])
           for name, target_hash in expected.items():
               path = root/'03_code'/name
               text = path.read_text(encoding='utf-8')
